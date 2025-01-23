@@ -12,5 +12,5 @@
   module("lesson10");
   module("gktools");
   module("gkcode_generator");
-  module("welcome"); // added by ATK Code Generator on Oct 14, 2024. Author: Jorge Garifuna (http://www.GariDigital.com) <info@GariDigital.com>
+  module("welcome"); 
 ?>
