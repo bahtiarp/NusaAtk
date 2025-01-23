@@ -1,0 +1,703 @@
+@import url(
+"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+);
+
+
+.choices {
+  /*** Untuk Mengatur lebar input select choices ***/
+  min-width: 80%;
+  margin-bottom: 0px;
+}
+
+.choices__inner
+ {
+  height: 30px;
+  min-height: 30px;
+  padding: 0px;
+ }
+
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+  font-size: 12px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the vdropdown content */
+.vdropdown {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.vdropdown-content {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -20px;
+  background-color: #d8dce4;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the vdropdown */
+.vdropdown-content a {
+  color: black;
+  padding: 5px 0 0 0;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of vdropdown links on hover */
+.vdropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the vdropdown menu (use JS to add this class to the .vdropdown-content container when the user clicks on the vdropdown button) */
+.show {display:block;}
+.hide {display:none;}
+
+.actions_link {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Roboto', sans-serif;
+  font-size: smaller;
+}
+.actions_link:hover {
+  color: inherit;
+}
+  
+/* Untuk Login */
+
+
+
+.container {
+  display: flex;
+  height: 90%;
+}
+
+.left {
+  flex: 1;
+  /* background: url('mikrotrans.png') no-repeat center center;
+    background-size: 50%; */
+  align-items: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.angkot {
+  /* margin-top: auto; */
+  width: 90%;
+}
+
+.login-form {
+  font-size: small;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  /* Adjust the size as needed */
+}
+
+@media (max-width: 768px) {
+  .left {
+    justify-content: flex-end;
+  }
+
+
+  .angkot {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    align-items: last baseline;
+  }
+
+  .right {
+    align-items: flex-start;
+  }
+}
+
+/* Untuk Login */
+
+
+
+
+
+
+
+
+
+
+
+
+.clickable {
+  cursor: pointer;
+}
+
+/* STACKTRACE */
+/* ----------------------------------------------------------------------- */
+
+
+.stacktrace,
+a.stacktrace:link,
+a.stacktrace:visited {
+  font-family: Tahoma, Trebuchet MS, Arial, Verdana;
+  font-size: 12px;
+  font-style: italic;
+  color: #414141;
+}
+
+.stacktrace_end {
+  font-family: Lucida Sans, Lucida Sans Unicode, Tahoma, Trebuchet MS, Arial, Verdana;
+  font-size: 12px;
+  font-style: italic;
+  color: #414141;
+}
+
+
+.field {
+  font-family: Lucida Sans, Lucida Sans Unicode, Tahoma, Trebuchet MS, Arial, Verdana;
+  font-size: 12px;
+  color: #414141;
+  text-align: left;
+  padding-left: 12px;
+  padding: 3px 0px 3px 0px;
+}
+
+.field a {
+  color: #ba0000;
+}
+
+
+.topbg {
+  background: #52006A;
+}
+
+.menubg {
+  background: #F00;
+}
+
+.error,
+.errorlabel {
+  color: #FF0000;
+  font-family: Lucida Sans, Lucida Sans Unicode, Tahoma, Trebuchet MS, Arial, Verdana;
+  font-size: 12px;
+  text-align: left;
+}
+
+.atkmessages {
+  background-color: #EEEEEE;
+  color: #000000;
+  font-family: Lucida Sans, Lucida Sans Unicode, Tahoma, Trebuchet MS, Arial, Verdana;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.atkmessages_general,
+.atkmessages_success,
+.atkmessages_failure,
+.atkmessages_warning {
+  margin-bottom: 1px;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.atkmessages_general {
+  background-color: yellow;
+  color: #000;
+}
+
+.atkmessages_success {
+  background-color: #339900;
+  color: #fff;
+}
+
+.atkmessages_warning {
+  background-color: orange;
+  color: #000;
+}
+
+.atkmessages_warning a {
+  color: #000;
+}
+
+.atkmessages_failure {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#action-buttons {
+  text-align: right;
+}
+
+
+
+/* BOX */
+/* ------------------------------------------------------------------ */
+
+.actionpageWrapper {
+  width: 93%;
+}
+
+
+
+/* EDIT FORM */
+/* ------------------------------------------------------------------ */
+
+button.atkbutton,
+button.btn,
+button.btn_save,
+button.btn_cancel,
+button.btn_saveandclose,
+button.btn_saveandcontinue,
+button.btn_saveandnext {
+  color: #000;
+  margin-right: 2px;
+}
+
+button.atkdefaultbutton {
+  font-weight: bold;
+}
+
+#editform td.field {
+  padding-right: 12px;
+  /* white-space: nowrap; */
+}
+
+#changeView {
+  position: absolute;
+  right: 12px;
+  top: -38px;
+  text-align: right;
+}
+
+#changeView a {
+  color: #9a1010;
+}
+
+.currentDate {
+  padding: 4px 0px;
+  color: #333;
+}
+
+.currentDate a {
+  text-decoration: none;
+}
+
+
+/* LOGIN FORM */
+/* ------------------------------------------------------------------ */
+
+.LoginHeader {
+  position: relative;
+  background: #fff url(../images/loginheaderleft.jpg) no-repeat left;
+  height: 12px;
+  width: 530px;
+  margin: 0px auto;
+}
+
+.LoginFooter {
+  position: relative;
+  background: #fff url(../images/contentfooterleft.jpg) no-repeat left;
+  height: 33px;
+  width: 530px;
+  margin: 0px auto;
+}
+
+.title{
+  font-size: larger;
+  font-weight: bold;
+}
+
+#logologin {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 249px;
+  height: 102px;
+}
+
+#loginhelp {
+  margin: 0px auto;
+  padding: 10px 0px 20px 0px;
+  color: #969696;
+  width: 400px;
+  text-align: center;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+}
+
+#loginform {
+  position: relative;
+  width: 530px;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+#loginform form {
+  padding: 30px 20px 30px 20px;
+  margin: 0px;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  background: #fff;
+}
+
+#loginform-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#loginform-content {
+  width: 220px;
+}
+
+.loginformField {
+  vertical-align: middle;
+  padding: 4px 0px;
+}
+
+.loginformLabel {
+  padding-right: 12px;
+  vertical-align: middle;
+}
+
+.atkonetomanyrelation {
+  color: #ba0000 ! important;
+  display: block;
+  margin-top: 6px;
+}
+
+
+
+
+/* BUTTONS */
+/* ------------------------------------------------------------------ */
+
+#action-buttons {
+  text-align: center;
+}
+
+#editform td.field {
+  padding-top: 5px;
+  padding-bottom: 2px;
+  vertical-align: top;
+}
+
+
+.atkboolattribute {
+  border: 0px ! important;
+  width: auto ! important;
+}
+
+
+/* COMMON STYLES */
+/* ------------------------------------------------------------------ */
+
+.red {
+  color: #9a1010;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.stacktrace {
+  margin: -1px 0px 20px 0px;
+}
+
+#action-helplink {
+  width: 100%;
+  text-align: right;
+  right: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+#atkbusy {
+  position: absolute;
+  visibility: hidden;
+  left: 20px;
+  top: 5px;
+  z-index: 20;
+  height: 22px;
+  width: 22px;
+}
+
+#searchbutton {
+  margin-top: 5px;
+}
+
+.atkAttrRowHidden {
+  display: none !important;
+}
+
+
+/* DIALOG */
+/* ------------------------------------------------------------------ */
+
+.atkdialog .nw {
+  background: transparent url(../images/atkdialog_corners_top.gif) no-repeat scroll 0 -25px;
+  height: 25px;
+  padding-left: 10px;
+}
+
+.atkdialog .ne {
+  background: transparent url(../images/atkdialog_corners_top.gif) no-repeat scroll right 0;
+  height: 25px;
+  padding-right: 10px;
+}
+
+.atkdialog .n {
+  background: transparent url(../images/atkdialog_corners_top.gif) repeat-x scroll 0 -50px;
+  font-size: 13px;
+  font-family: Lucida Sans, Lucida Sans Unicode, Tahoma, Trebuchet MS, Arial, Verdana;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #FFFFFF;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-right: 60px;
+  padding-top: 3px;
+  overflow: hidden;
+}
+
+.atkdialog .content {
+  background-color: #FDFDFD;
+  color: #000;
+  font-size: 12px;
+  font-family: Lucida Sans, Lucida Sans Unicode, Tahoma, Trebuchet MS, Arial, Verdana;
+  overflow: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+.atkdialog .w {
+  border-left: 1px solid #B9B9B9;
+  border-right: 1px solid #B9B9B9;
+}
+
+.atkdialog .e {
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+}
+
+.atkdialog .sw {
+  background: transparent url(../images/atkdialog_corners_bottom.gif) no-repeat scroll 0 -12px;
+  font-size: 2px;
+  height: 12px;
+  padding-left: 6px;
+}
+
+.atkdialog .se {
+  background: transparent url(../images/atkdialog_corners_bottom.gif) no-repeat scroll right 0;
+  font-size: 2px;
+  height: 12px;
+  padding-right: 6px;
+}
+
+.atkdialog .s {
+  background: transparent url(../images/atkdialog_corners_bottom.gif) repeat-x scroll 0 -24px;
+  font-size: 11px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.atkdialog .se_resize_handle {
+  background: transparent url(../images/atkdialog_sizer.gif) no-repeat scroll right 0;
+  font-size: 2px;
+  height: 12px;
+  padding-right: 12px;
+}
+
+.atkdialog .se_sizer {
+  width: 12px;
+  height: 12px;
+}
+
+.atkdialog .buttons {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  height: 20px;
+}
+
+.atkdialog .buttons a.close {
+  background: transparent url(../images/atkdialog_buttons.gif) no-repeat 0 0;
+  display: block;
+  height: 18px;
+  float: left;
+  width: 23px;
+  font-size: 1px;
+  padding-top: 2px;
+  /* padding-top = buttons order, it will be reset to 0, do not use padding, use margin*/
+}
+
+.atkdialog .buttons a:hover.close {
+  background: transparent url(../images/atkdialog_buttons.gif) no-repeat 0 -18px;
+}
+
+.atkdialog .buttons a.maximize {
+  background: transparent url(../images/atkdialog_buttons.gif) no-repeat 0 -36px;
+  display: block;
+  height: 18px;
+  float: left;
+  width: 23px;
+  font-size: 1px;
+  padding-top: 1px;
+  /* padding-top = buttons order, it will be reset to 0, do not use padding, use margin*/
+}
+
+.atkdialog .buttons a:hover.maximize {
+  background: transparent url(../images/atkdialog_buttons.gif) no-repeat 0 -54px;
+}
+
+.atkdialog .buttons a.minimize {
+  background: transparent url(../images/atkdialog_buttons.gif) no-repeat 0 -72px;
+  display: block;
+  height: 18px;
+  float: left;
+  width: 23px;
+  font-size: 1px;
+  padding-top: 0px;
+  /* padding-top = buttons order, it will be reset to 0, do not use padding, use margin*/
+}
+
+.atkdialog .buttons a:hover.minimize {
+  background: transparent url(../images/atkdialog_buttons.gif) no-repeat 0 -90px;
+}
+
+.atkdialog .buttons a.minimize.disabled,
+.atkdialog .buttons.over a.minimize.disabled {
+  background: transparent url(../images/atkdialog_buttons.gif) no-repeat 0 -108px !important;
+}
+
+.atkdialog_overlay {
+  background-color: #ddd;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+
+.atkdialog_wired {
+  background: #FFF;
+  border: 1px #000 dashed;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  position: absolute;
+  -moz-opacity: 0.6;
+}
+
+.load_criteria {
+  font-family: Lucida Sans, Lucida Sans Unicode, Tahoma, Trebuchet MS, Arial, Verdana;
+  font-size: 12px;
+  color: #414141;
+  text-align: left;
+  padding-left: 12px;
+  padding: 3px 0px 15px 0px;
+  vertical-align: middle;
+}
+
+.load_criteria img {
+  vertical-align: middle;
+}
+
+.save_criteria {
+  font-family: Lucida Sans, Lucida Sans Unicode, Tahoma, Trebuchet MS, Arial, Verdana;
+  font-size: 12px;
+  color: #414141;
+  text-align: left;
+  padding-left: 12px;
+  padding: 15px 0px 3px 0px;
+}
+
+.save_criteria #save_criteria {
+  margin-left: 21px;
+}
+
+.overlib_txt {
+  font-size: 11px;
+  color: #222;
+}
+
+.overlib_bg {
+  background-color: #ddd;
+}
+
+.overlib_fg {
+  background-color: #ffffcc;
+}

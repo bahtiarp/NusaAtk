@@ -1,0 +1,7 @@
+<?php
+$en=array(
+	"id"=>"Id",
+	"name"=>"Name",
+	"menu_Dashboard"=>"Dashboard",
+);
+?>

@@ -1,0 +1,19 @@
+.more-button  {
+
+    margin-left: -10px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(89, 125, 72, 0.15) !important; */
+  }
+
+  .more-button:hover  {
+    color: white;
+    background-color: #7faff3 !important;
+    transition: all .3s ease;
+  }

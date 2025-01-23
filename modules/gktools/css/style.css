@@ -1,0 +1,51 @@
+a.iconlink, a.iconlink:visited, a.iconlink:hover, a.iconlink:active, a.iconlink:link, span.icontext {
+	color: #000000; 
+	font-size: 16px; 
+	text-decoration: none; 
+	background: none; 
+}
+
+/*
+body { padding-bottom: 10px; padding-top: 0px; margin: 0px; text-align: center; background: #fff; }
+h1 { color: #333; font: bold 22px Arial, Helvetica, sans-serif; padding: 5px 5px 5px 6px; margin-top: 0px; }
+h2 { font: normal 20px Arial, Helvetica, sans-serif; color: #000000; }
+*/
+/*h3 { font: normal 18px Arial, Helvetica, sans-serif; color: #FF0084; margin-bottom: 5px; }*/
+
+h3 { font: normal 18px Arial, Helvetica, sans-serif; color: #003F36; margin-bottom: 5px; }
+/*
+h4 { font: bold 12px Arial, Helvetica, sans-serif; color: #111; margin-bottom: 5px; }
+h5 { font: bold 13px Arial, Helvetica, sans-serif; margin-bottom: 5px; }
+h6 { font: normal 11px Arial, Helvetica, sans-serif; color: #666666; }
+
+form { padding: 0px; margin: 0px; border: 0px; }
+table { border: none; }
+th { font: bold 11px Arial, Helvetica, sans-serif; text-align: left; color: #666;}
+td { padding: 5px; font: 12px Arial, Helvetica, sans-serif; } 
+img { border: 1px solid #ddd; }
+ol { font: normal 12px Arial, Helvetica, sans-serif; line-height: 18px; }
+ul { font: normal 12px Arial, Helvetica, sans-serif; line-height: 18px; }
+li { font: normal 12px Arial, Helvetica, sans-serif; line-height: 18px; }
+dd, dt { font: normal 12px Arial, Helvetica, sans-serif; line-height: 18px; }
+*/
+
+/* ##################### */
+/*      LINK STYLES      */
+/* ##################### */
+
+/*
+a:link { color: #0063DC; text-decoration: underline; }
+a:visited { color: #2E67C7; text-decoration: underline; }
+a:hover { color: #FFFFFF; text-decoration: none; background: #0063DC; }
+a:active { color: #FFFFFF; text-decoration: none; background: #0259C4; }
+*/
+ p { font: 12px Arial, Helvetica, sans-serif; } 
+.TagsBox { padding: 15px; border: solid 1px #eee; background: #f5f5f5; }
+
+a.pagination, a.pagination:visited, a.pagination:hover, a.pagination:active, a.pagination:link, span.pagination {
+	font-size: 12px; 
+	text-decoration: none; 
+	background: none; 
+}
+
+

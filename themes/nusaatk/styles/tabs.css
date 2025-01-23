@@ -1,0 +1,115 @@
+
+#editform
+{
+  text-align: left;
+  margin-left:40px;
+}
+
+.tabsTabs 
+{
+  backgrounds: url(../images/tabbottom.gif) repeat-x left bottom;
+  border-bottom: 1px solid #0084c0;
+  margin-bottom:0px;
+  
+}
+
+#tabContainer
+{
+  padding: 0px;
+}
+
+.mainTabs
+{
+  smargin: 0 0 15px 0;
+  margin-bottom:0px;
+}
+
+.mainTabs a
+{
+  display: block;
+	text-decoration: none;
+}
+
+.activetab
+{
+  display: block;
+  padding: 4px 0px 3px 0px;
+  margin: 0px;
+	color: #414141;
+	-webkit-border-top-left-radius:5px;
+		 -webkit-border-top-right-radius:5px;
+		 -moz-border-top-left-radius:5px;
+		 -moz-border-top-right-radius:5px;
+		 border-top-left-radius:5px;
+		 border-top-right-radius:5px;
+    	 /* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0084c0), to(#029ce2));
+		 /* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(b, #0084c0, #029ce2); 
+		 /* Firefox 3.6+ */ background: -moz-linear-gradient(top, #0084c0, #029ce2); 
+		 /* IE 10 */ background: -ms-linear-gradient(top, #0084c0, #029ce2); 
+		 /* Opera 11.10+ */ background: -o-linear-gradient(top, #0084c0, #029ce2);
+	width: 142px;
+	margin: 0px;
+	cursor: default;
+	height: 100%;
+	text-align: center;
+}
+
+.passivetab
+{
+  display: block;
+  padding: 4px 0px 3px 0px;
+  margin: 0px;
+	
+	color: #414141;
+	-webkit-border-top-left-radius:5px;
+		 -webkit-border-top-right-radius:5px;
+		 -moz-border-top-left-radius:5px;
+		 -moz-border-top-right-radius:5px;
+		 border-top-left-radius:5px;
+		 border-top-right-radius:5px;
+    	 /* Safari 4-5, Chrome 1-9 */ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d4d3d3), to(#b5b3b3));
+		 /* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(b, #d4d3d3, #b5b3b3); 
+		 /* Firefox 3.6+ */ background: -moz-linear-gradient(top, #d4d3d3, #b5b3b3); 
+		 /* IE 10 */ background: -ms-linear-gradient(top, #d4d3d3, #b5b3b3); 
+		 /* Opera 11.10+ */ background: -o-linear-gradient(top, #d4d3d3, #b5b3b3);
+	width: 142px;
+	cursor: pointer;
+	height: 100%;
+	text-align: center;
+}
+
+.tabbedPane a
+{
+  
+}
+
+.tabbedPane .tabsTabs .activetab
+{
+  padding: 4px 0px 2px 0px !important;
+}
+
+.tabbedPane .tabsTabs .passivetab
+{
+  padding: 4px 0px 2px 0px !important;
+}
+
+.tabbedPane .tabsTabs .activetab a
+{
+  display: block;
+  color: #414141;
+  text-decoration: none;
+  font-size: 10px;
+  height: 100%;
+}
+
+.tabbedPane .tabsTabs .passivetab a
+{
+  display: block;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.tabsContent{
+  border-left: 0px solid #a4c736;
+  border-right: 0px solid #a4c736;
+}

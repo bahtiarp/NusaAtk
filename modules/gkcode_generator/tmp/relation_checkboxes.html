@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title></title>
+  
+  <script>
+          // manages relationshit checkboxes
+          // for example when o2m is selected, shuffle and many bool relation are disabled and visaversa
+		function manageRelationCheckboxes(object){
+     		  var my_name = object.name;
+     		  var my_value = object.value;
+     		  var my_checked = object.checked;
+     		  var total_fields = document.forms[0].elements[my_name].length;
+                    var my_values_array = my_value.split('*');
+     
+                 if (total_fields > 0) 
+     		  {				
+     		    var field = document.forms[0];
+     		    for (i = 0; i < total_fields; i++) 
+     		    {      
+                         var field = document.forms[0].elements[my_name][i];
+                         var value = document.forms[0].elements[my_name][i].value;
+                         var checked = document.forms[0].elements[my_name][i].checked;
+                         var disabled = document.forms[0].elements[my_name][i].disabled;
+                         var values_array = value.split('*');
+                         if((values_array[4] != "m2o") &&  (my_values_array[2] == values_array[2])){ // exclude m2o relations
+                              if(my_checked && (my_value != value)){
+                                   field.disabled = true;                                   
+                              }else{
+                                   field.disabled = false;
+                              }                                   
+                         }
+     		    }// end for
+     		    //alert(rv);
+     			return true; //checkModuleName();
+     		  }// end if
+     		  return false;
+          }// end function
+  </script>
+  </head>
+  <body>
+
+<form>
+<input type='checkbox' onClick='manageRelationCheckboxes(this);' value='budget_national_expenditure_income_range*budget_national_expenditure_income_range_id*budget_national_expenditure_percentage*budget_national_expenditure_income_range_id*o2m' name='budget_national_expenditure_income_range*budget_national_expenditure_income_range_id_relation[]' checked> o2m<br>
+<input type='checkbox' onClick='manageRelationCheckboxes(this);' value='budget_national_expenditure_income_range*budget_national_expenditure_income_range_id*budget_national_expenditure_percentage*budget_national_expenditure_income_range_id*shuffle' name='budget_national_expenditure_income_range*budget_national_expenditure_income_range_id_relation[]' disabled> shuffle<br>
+<input type='checkbox' onClick='manageRelationCheckboxes(this);' value='budget_national_expenditure_income_range*budget_national_expenditure_income_range_id*budget_national_expenditure_percentage*budget_national_expenditure_income_range_id*manybool' name='budget_national_expenditure_income_range*budget_national_expenditure_income_range_id_relation[]' disabled>bool<br>
+<input type='checkbox' onClick='manageRelationCheckboxes(this);' value='budget_national_expenditure_income_range*budget_national_expenditure_income_range_id*budget_national_expenditure_percentage*budget_national_expenditure_income_range_id*m2o' name='budget_national_expenditure_income_range*budget_national_expenditure_income_range_id_relation[]'>m2o<br>
+</form>
+  </body>
+</html>

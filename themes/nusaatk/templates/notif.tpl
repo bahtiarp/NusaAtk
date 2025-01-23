@@ -1,0 +1,1 @@
+<label class="badge btn btn-danger">{$content}</label>

@@ -1,0 +1,47 @@
+/* CSS Document */
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+#slantedmenu{
+font-weight: bold;
+font-size: 90%;
+}
+
+#slantedmenu:after{ /*Add margin between menu and rest of content in Firefox*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+#slantedmenu ul{
+text-indent: 10px;
+padding: 3px 0;
+margin: 0;
+background-color: #e0e0e0;
+border: 1px solid #bebebe;
+text-align: left; /*set value to "center" for example to center items*/
+}
+
+#slantedmenu ul li{
+display: inline;
+}
+
+#slantedmenu ul li a{
+color: #494949;
+padding: 3px 0;
+padding-right: 25px;
+margin: 0;
+text-decoration: none;
+background: transparent url(slantdivider.gif) top right no-repeat;
+}
+
+#slantedmenu ul li a:visited{
+color: #494949;
+} 
+
+#slantedmenu ul li a:hover{
+color: black;
+}

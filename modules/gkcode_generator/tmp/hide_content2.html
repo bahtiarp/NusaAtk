@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title></title>
+	<style type="text/css">
+	/* Start of css that is not needed for the script */
+	body{
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		margin-top:0px;
+		background-image:url('../../images/heading3.gif');
+		background-repeat:no-repeat;
+		padding-top:100px;
+	}
+	p{
+		margin-top:0px;
+	}
+	a{
+		color:#660000;
+		text-decoration:none;
+
+	}	
+	/* End of css that is not needed for the script */
+	
+	/* Don't delete anything below here */
+	#dhtmlgoodies_contentBox{
+		border:1px solid #317082;
+		height:0px;
+		visibility:hidden;
+		position:absolute;
+		background-color:#E2EBED;
+		overflow:hidden;
+		padding:2px;
+		width:250px;
+				
+	}
+	#dhtmlgoodies_content{
+		position:relative;		
+		font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+		width:100%;
+		font-size:0.8em;
+		
+	}
+	#dhtmlgoodies_slidedown{
+		position:relative;
+		width:250px;
+	}
+
+	</style>
+	<script type="text/javascript">
+	/************************************************************************************************************
+	(C) www.dhtmlgoodies.com, September 2005
+	
+	This is a script from www.dhtmlgoodies.com. You will find this and a lot of other scripts at our website.	
+	
+	Terms of use:
+	You are free to use this script as long as the copyright message is kept intact. However, you may not
+	redistribute, sell or repost it without our permission.
+	
+	Thank you!
+	
+	www.dhtmlgoodies.com
+	Alf Magne Kalleland
+	
+	************************************************************************************************************/		
+	var initHeight = 0;
+	var slidedown_direction = 1;
+	var slidedownContentBox = false;
+	var slidedownContent = false;
+	var slidedownActive = false;
+	var contentHeight = false;
+	var slidedownSpeed = 3; 	// Higher value = faster script
+	var slidedownTimer = 7;	// Lower value = faster script
+	function slidedown_showHide()
+	{
+		if(initHeight==0)slidedown_direction=slidedownSpeed; else slidedown_direction = slidedownSpeed*-1;
+		if(!slidedownContentBox){
+			slidedownContentBox = document.getElementById('dhtmlgoodies_contentBox');
+			slidedownContent = document.getElementById('dhtmlgoodies_content');
+			contentHeight = document.getElementById('dhtmlgoodies_content').offsetHeight;
+		}
+		slidedownContentBox.style.visibility='visible';
+		slidedownActive = true;
+		slidedown_showHide_start();
+	}
+	function slidedown_showHide_start()
+	{
+		if(!slidedownActive)return;
+		initHeight = initHeight/1 + slidedown_direction;
+		if(initHeight <= 0){
+			slidedownActive = false;	
+			slidedownContentBox.style.visibility='hidden';
+			initHeight = 0;
+		}
+		if(initHeight>contentHeight){
+			slidedownActive = false;	
+		}
+		slidedownContentBox.style.height = initHeight + 'px';
+		slidedownContent.style.top = initHeight - contentHeight + 'px';
+		setTimeout('slidedown_showHide_start()',slidedownTimer);	// Choose a lower value than 10 to make the script move faster
+	}
+	
+	function setslidedownWidth(newWidth)
+	{
+		document.getElementById('dhtmlgoodies_slidedown').style.width = newWidth + 'px';
+		document.getElementById('dhtmlgoodies_contentBox').style.width = newWidth + 'px';
+	}
+	
+	function setSlideDownSpeed(newSpeed)
+	{
+		slidedownSpeed = newSpeed;
+		
+	}
+	</script>	
+
+
+  </head>
+  <body>
+
+source: <a href="http://www.dhtmlgoodies.com/index.html?whichScript=pulldown_content">http://www.dhtmlgoodies.com/index.html?whichScript=pulldown_content</a><br>
+<br>
+
+<div id="dhtmlgoodies_pulldown">
+	<div id="dhtmlgoodies_control"><a href="#" onclick="pulldown_showHide();return false;">Show pulldown</a></div>
+	<div id="dhtmlgoodies_contentBox">
+		<div id="dhtmlgoodies_content">
+			This is the content we want to show<br>
+			This is the content we want to show<br>
+			This is the content we want to show<br>
+			This is the content we want to show<br>
+			This is the content we want to show<br>
+			This is the content we want to show
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+setPullDownWidth(300);
+</script>
+<p>Click on the link above. Other website content.<br> Other website content.<br> Other website content.<br> Other website content.</p>
+
+  </body>
+</html>

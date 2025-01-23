@@ -1,0 +1,41 @@
+/* CSS Document */
+
+		/*
+		
+		This is one of the free scripts from www.dhtmlgoodies.com
+		You are free to use this script as long as this copyright message is kept intact
+		
+		(c) Alf Magne Kalleland, http://www.dhtmlgoodies.com - 2005
+		
+		*/		
+		#dhtmlgoodies_tree li{
+			list-style-type:none;	
+			font-family: arial;
+			font-size:11px;
+		}
+		#dhtmlgoodies_topNodes{
+			margin-left:0px;
+			padding-left:0px;
+		}
+		#dhtmlgoodies_topNodes ul{
+			margin-left:20px;
+			padding-left:0px;
+			display:none;
+		}
+		#dhtmlgoodies_tree .tree_link{
+			line-height:13px;
+			padding-left:2px;
+
+		}
+		#dhtmlgoodies_tree img{
+			padding-top:2px;
+		}
+		#dhtmlgoodies_tree a{
+			color: #000000;
+			text-decoration:none;
+		}
+		.activeNodeLink{
+			background-color: #316AC5;
+			color: #FFFFFF;
+			font-weight:bold;
+		}
