@@ -1,0 +1,31 @@
+<?php
+  /**
+   * This file is part of the Achievo ATK distribution.
+   * Detailed copyright and licensing information can be found
+   * in the doc/COPYRIGHT and doc/LICENSE files which should be
+   * included in the distribution.
+   *
+   * @package atk
+   * @subpackage themes
+   *
+   * @copyright (c)2000-2004 Ibuildings.nl BV
+   * @license http://www.achievo.org/atk/licensing ATK Open Source License
+   *
+   * @version $Revision: 5798 $
+   * $Id: themedef.inc 6354 2009-04-15 02:41:21Z mvdam $
+   */
+
+  /**
+   * Theme definition
+   */
+  $theme["doctype"] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"'."\n".'"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">';
+  $theme['compatible_menus'] = array('atk.menu.atkEllyMenu');
+  $theme["highlight"] = "";
+  $theme["select"] = "";
+  $theme['useframes'] = false;
+  $theme['dispatcher'] = 'dispatch.php';
+  $theme['menufile'] = 'dispatch.php';
+  $theme['menu_params'] = "class='menulink'";
+  $theme["tabtype"] = "dhtml";
+
+?>
