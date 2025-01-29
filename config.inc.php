@@ -156,7 +156,7 @@
   // custom type with a fullclassname like 'module.mymodule.myauth' (syntax similar as atknew or atkimport)
   // if you need to use multiple authentication types list them delimited by comma
   // $config_authentication = "db";
-  $config_authentication = "  db";
+  $config_authentication = "db";
   // The type of authorization (what is a user allowed to do?)
   // Normally this will be the same as the authentication, but in
   // special cases like POP3 authentication you might want to
